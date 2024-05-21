@@ -1,0 +1,24 @@
+Get-History | Select-Object -First 30   Get command history of first 30
+
+Merge a branch to main or specific branch
+To merge your current branch into a branch called "develop" in Git, you need to follow these steps.
+
+git status
+On branch teststate
+Your branch is behind 'origin/teststate' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+nothing to commit, working tree clean
+
+1. Update your Current Branch
+a)git status
+b) git pull origin teststate
+2. Switch to the target Branch (develop branch)
+a) git checkout develop
+3. Pull the latest changes from "develop" branch
+a) git pull origin develop
+4. merge teststate branch into develop branch
+a) git merge teststate
+5. Resolve any Conflits
+6. Push the Changes to the Remote Repository
+a) git push origin develop
